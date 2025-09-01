@@ -1,0 +1,94 @@
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 1.5em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 1.5em #61dafbaa);
+}
+
+/* Estilos para las celdas del parking */
+.parking-cell {
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin: 5px;
+  font-size: 12px;
+  text-align: center;
+}
+
+.parking-cell:hover {
+  transform: scale(1.05);
+}
+
+.parking-cell.available {
+  background-color: #d4edda;
+  border-color: #c3e6cb;
+}
+
+.parking-cell.occupied {
+  background-color: #f8d7da;
+  border-color: #f5c6cb;
+  cursor: not-allowed;
+}
+
+.parking-cell.carro {
+  width: 120px;
+  height: 120px;
+}
+
+.parking-cell.moto {
+  width: 80px;
+  height: 120px;
+}
+
+.parking-cell.bicicleta {
+  width: 60px;
+  height: 80px;
+}
+
+.cells-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding: 10px;
+}
+
+.parking-area {
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.card {
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: scale(1.02);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
