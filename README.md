@@ -1,12 +1,72 @@
-# React + Vite
+# Parking_Lot
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Proyecto desarrollado con React + Vite para simular o gestionar un sistema de parqueadero, con una interfaz simple y una estructura básica lista para ampliar.
 
-Currently, two official plugins are available:
+## ¿Qué es este proyecto?
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Este proyecto permite entender cómo construir una aplicación frontend moderna con React y Vite, organizando componentes, estilos y lógica de manera clara.
 
-## Expanding the ESLint configuration
+## Requisitos previos
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Antes de empezar, asegúrate de tener instalado:
+
+- Node.js 18 o superior
+- npm o pnpm
+- Git
+- Visual Studio Code (recomendado)
+
+## Cómo arrancarlo desde cero
+
+1. Entrar a la carpeta del proyecto:
+
+```powershell
+cd .\Parking_Lot
+```
+
+2. Instalar dependencias:
+
+```powershell
+npm install
+```
+
+3. Ejecutar la aplicación en modo desarrollo:
+
+```powershell
+npm run dev
+```
+
+4. Abrir la URL que aparece en la terminal, normalmente:
+
+```text
+http://localhost:5173/
+```
+
+## Estructura del proyecto
+
+- src/: contiene los componentes, páginas y lógica principal de la app.
+- public/: archivos estáticos.
+- package.json: dependencias y scripts del proyecto.
+
+## Scripts útiles
+
+```powershell
+npm run dev
+npm run build
+npm run preview
+```
+
+## ¿Qué aprendí?
+
+Con este proyecto aprendí a:
+
+- crear aplicaciones con React y Vite desde cero.
+- organizar componentes y estructura de carpetas.
+- ejecutar un proyecto frontend en modo desarrollo.
+- usar npm para instalar dependencias y correr scripts.
+- comprender el flujo básico de desarrollo de una app moderna.
+
+## Notas adicionales
+
+- Si aparece un error de dependencias, vuelve a ejecutar `npm install`.
+- Si el puerto 5173 está ocupado, Vite probablemente usará otro puerto automáticamente.
+- Para una versión lista para producción, usa `npm run build`.
